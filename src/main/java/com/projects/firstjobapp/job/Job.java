@@ -1,4 +1,4 @@
-package com.projects.firstjobapp;
+package com.projects.firstjobapp.job;
 
 public class Job {
 

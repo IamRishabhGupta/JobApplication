@@ -1,4 +1,4 @@
-package com.projects.firstjobapp;
+package com.projects.firstjobapp.job;
 
 import org.springframework.web.bind.annotation.*;
 
