@@ -1,7 +1,6 @@
 package com.projects.firstjobapp;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +17,12 @@ public class JobController {
     public List<Job> findAll()
     {
         return jobs;
+    }
+
+    @PostMapping("/jobs")
+    public String createJob(@RequestBody Job job)
+    {
+        jobs.add(job);
+        return "Job added Successfully";
     }
 }
