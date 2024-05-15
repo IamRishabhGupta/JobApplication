@@ -11,4 +11,6 @@ public interface JobService {
     Job getJobById(int id);
 
     boolean deleteJobById(int id);
+
+    boolean updateJobById(int id,Job job);
 }
