@@ -9,4 +9,6 @@ public interface JobService {
     void createJob(Job job);
 
     Job getJobById(int id);
+
+    void deleteJobById(int id);
 }
