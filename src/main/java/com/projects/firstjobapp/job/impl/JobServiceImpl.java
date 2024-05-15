@@ -12,7 +12,9 @@ import java.util.List;
 @Service
 public class JobServiceImpl implements JobService {
 
+
     private List<Job> jobs=new ArrayList<>();
+    int id=1;
 
     @Override
     public List<Job> findAll() {
@@ -21,6 +23,8 @@ public class JobServiceImpl implements JobService {
 
     @Override
     public void createJob(Job job) {
+        job.setId(id);
+        id++;
         jobs.add(job);
     }
 
