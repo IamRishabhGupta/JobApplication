@@ -34,6 +34,11 @@ public class JobController {
     public Job getJobById(@PathVariable int id)
     {
         Job job=jobService.getJobById(id);
+        if(job!=null)
         return job;
+
+        Job temp=new Job(1,"Test","Record not found","0","0","mars");
+        return temp;
+
     }
 }
