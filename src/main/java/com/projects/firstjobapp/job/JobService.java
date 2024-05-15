@@ -3,14 +3,12 @@ package com.projects.firstjobapp.job;
 import java.util.List;
 
 public interface JobService {
-
-
     List<Job> findAll();
     void createJob(Job job);
 
-    Job getJobById(int id);
+    Job getJobById(Long id);
 
-    boolean deleteJobById(int id);
+    boolean deleteJobById(Long id);
 
-    boolean updateJobById(int id,Job job);
+    boolean updateJob(Long id, Job updatedJob);
 }
