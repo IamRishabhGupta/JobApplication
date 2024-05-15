@@ -29,4 +29,11 @@ public class JobController {
         jobService.createJob(job);
         return "Job added Successfully";
     }
+
+    @GetMapping("/jobs/{id}")
+    public Job getJobById(@PathVariable int id)
+    {
+        Job job=jobService.getJobById(id);
+        return job;
+    }
 }
