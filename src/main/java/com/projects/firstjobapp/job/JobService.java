@@ -10,5 +10,5 @@ public interface JobService {
 
     Job getJobById(int id);
 
-    void deleteJobById(int id);
+    boolean deleteJobById(int id);
 }
