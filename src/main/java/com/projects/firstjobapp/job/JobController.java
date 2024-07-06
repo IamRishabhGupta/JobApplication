@@ -5,12 +5,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//think of @RequestMapping("/jobs") as setting a base path for all the
+// requests that the controller handles. Then, each method within that controller will
+// handle different HTTP operations (like GET, POST, PUT, DELETE) under this base path.
 @RestController
 @RequestMapping("/jobs")
 public class JobController {
     private JobService jobService;
-
+//constructor
     public JobController(JobService jobService) {
         this.jobService = jobService;
     }
