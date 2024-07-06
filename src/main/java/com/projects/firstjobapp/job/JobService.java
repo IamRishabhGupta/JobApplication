@@ -12,3 +12,4 @@ public interface JobService {
 
     boolean updateJob(Long id, Job updatedJob);
 }
+//while transitioning to microservices we used DTO for findALl
